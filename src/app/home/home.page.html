@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title><h1 class="ion-text-center">Libritox</h1></ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar placerholder="buscar"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-button color="tertiary" [routerLink]="['/perfil']" class="per">
+      Ver perfil
+    </ion-button>
+  </div>
+  <div class="container">
+    <ion-button color="tertiary" [routerLink]="['/agregar']" class="agre">
+      Agregar libros 
+    </ion-button>
+  </div>
+  <div class="container">
+    <ion-button color="tertiary" class="eli" (click)=error()>
+      Eliminar libros  
+    </ion-button>
+  </div>
+  <div class="container">
+    <ion-button color="tertiary" class="res" (click)=error()>
+      Restringir cuentas   
+    </ion-button>    
+  </div>
+  <div class="container">
+    <ion-button color="tertiary" class="info" (click)=info()>
+      Mas información
+    </ion-button>    
+  </div>
+
+</ion-content>

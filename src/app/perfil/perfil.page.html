@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title><h1 class="ion-text-center">Libritox</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1 class="ion-text-center">{{usuario.nombre}}</h1>
+  <img class="logo" src="../../assets/icon/logo.jpg" alt="">
+  <div class="tab-group">
+    <div class="tab">
+      <input type="checkbox" id="tab-one" name="tabs">
+      <label for="tab-one"><p>Libros leidos</p></label>
+      <div class="tab-content">
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+    </div>
+    <hr>
+    <div class="tab">
+      <input type="checkbox" id="tab-two" name="tabs">
+      <label for="tab-two"><p>Libros publicados</p></label>
+      <div class="tab-content">
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button color="tertiary" slot="end" (click)=error()>
+      Configuración
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title><h1 class="ion-text-center">Libritox</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Inicie sesion</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form [formGroup]="formulariologin" >
+          <ion-item>
+            <ion-label position="floating">Nombre de usuario</ion-label>
+            <ion-input formControlName="nombre"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+          </ion-item>
+        </form>
+        <br>
+        <ion-button color="tertiary" (click)=entrar()>
+          Ingresar
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button color="tertiary" slot="end" [routerLink]="['/registro']">
+      Crear una cuenta
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,59 @@
+label p{
+    text-align: center;
+  }
+  
+  .tab-group{
+    margin: 3em auto;
+    max-width: 503mm;
+    width: 100%;
+  }
+  
+  .tab{
+    position: relative;
+    width: 100%;
+  }
+  
+  .tab input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  .tab label{
+    background: #0613ce;
+    color: #ffffff;
+    display: block;
+    font-weight: bolder;
+    line-height: 3;
+    padding-left: .5em;
+    margin-bottom: .5em;
+  }
+  
+  .tab input:focus + label,
+  .tab label:hover{
+    background: #0613ce;
+    color: #ffffff;
+    transition: .3s;
+  }
+  
+  .tab-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+  }
+  
+  .tab-content p {
+     margin: 1em 0;
+     margin-left: 2em;
+  }
+  
+  .tab input:checked ~ .tab-content{
+    max-height: 20em;
+  }
+
+  .logo{
+    margin-left: 18%;
+    height:250px;
+    width:250px;
+}
